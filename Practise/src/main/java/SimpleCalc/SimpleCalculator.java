@@ -52,8 +52,8 @@ public class SimpleCalculator {
                 if (secondNumber!=0) {
                     System.out.println(CalcOperations.division(firstNumber, secondNumber));
                 }
-//                else
-//                    System.err.print("Numbers canot be devided by zero");
+                else
+                    System.err.print("Numbers canot be devided by zero");
                 }catch(ArithmeticException e){
                     e.printStackTrace();
                 }
