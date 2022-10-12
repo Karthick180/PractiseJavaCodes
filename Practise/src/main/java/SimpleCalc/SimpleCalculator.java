@@ -47,7 +47,7 @@ public class SimpleCalculator {
             case "mul":
                 System.out.println(CalcOperations.multiplication(firstNumber,secondNumber));
                 break;
-            case "div":
+            case "div": // figured out new problem in catch printing
                 try{
                 if (secondNumber!=0) {
                     System.out.println(CalcOperations.division(firstNumber, secondNumber));
