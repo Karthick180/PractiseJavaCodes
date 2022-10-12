@@ -54,5 +54,7 @@ public class MortgageCalc {
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
         System.out.print("Mortgage: "+mortgageFormatted);
 
+        scanner.close();
+
     }
 }

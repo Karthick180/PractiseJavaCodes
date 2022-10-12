@@ -18,6 +18,8 @@ public class FizzBuzz {
        else
            System.out.println(input);
 
+       scanner.close();
+
 
     }
 }
