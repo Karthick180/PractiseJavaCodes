@@ -9,10 +9,10 @@ public class MortgageCalc {
         final byte MONTHS_IN_YEAR = 12;
         final byte PERCENT = 100;
         double mortgage;
-        int principle=0;
-        float annualInterest = 0;
-        float monthlyInterest=0;
-        int numberOfPayments = 0;
+        int principle;
+        float annualInterest;
+        float monthlyInterest;
+        int numberOfPayments;
     // Creating an instance for a scanner
         Scanner scanner = new Scanner(System.in);
 
