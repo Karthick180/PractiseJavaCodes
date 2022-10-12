@@ -6,7 +6,7 @@ class CalcOperations{
     public static int addition(int a, int b){
         return a+b;
     }
-    public static int subraction(int a, int b){
+    public static int subtraction(int a, int b){
         return a-b;
     }
     public static int multiplication(int a, int b){
@@ -42,7 +42,7 @@ public class SimpleCalculator {
                 System.out.println(CalcOperations.addition(firstNumber,secondNumber));
                 break;
             case "sub":
-                System.out.println(CalcOperations.subraction(firstNumber,secondNumber));
+                System.out.println(CalcOperations.subtraction(firstNumber,secondNumber));
                 break;
             case "mul":
                 System.out.println(CalcOperations.multiplication(firstNumber,secondNumber));
