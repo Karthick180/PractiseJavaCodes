@@ -53,7 +53,7 @@ public class SimpleCalculator {
                     System.out.println(CalcOperations.division(firstNumber, secondNumber));
                 }
                 else
-                    System.err.print("Numbers canot be devided by zero");
+                    System.err.print("Numbers can't be divisible by zero");
                 }catch(ArithmeticException e){
                     e.printStackTrace();
                 }
