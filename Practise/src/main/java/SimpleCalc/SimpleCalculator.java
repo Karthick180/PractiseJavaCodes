@@ -3,24 +3,20 @@ package SimpleCalc;
 import java.util.Scanner;
 
 class CalcOperations{
-//    public static int addition(int a, int b){return a+b;}
-    protected final float addition(float a, float b){
+
+    protected final double addition(double a, double b){
         return a+b;
     }
-//    public static int subtraction(int a, int b){return a-b;}
-    protected final float subtraction(float a, float b){
+
+    protected final double subtraction(double a, double b){
         return a-b;
     }
-//    public static int multiplication(int a, int b){
-//        return a*b;
-//    }
-    protected final float multiplication(float a, float b){
+
+    protected final double multiplication(double a, double b){
         return a*b;
     }
-//    public static int division(int a, int b){
-//        return a/b;
-//    }
-    protected final float division(float a, float b){
+
+    protected final double division(double a, double b){
         return a/b;
     }
 }
@@ -29,9 +25,9 @@ public class SimpleCalculator {
     public static void main(String[] args) {
         CalcOperations operations = new CalcOperations();
 
-        float firstNumber;
-        float secondNumber;
-        String repeatOperation = null;
+        double firstNumber;
+        double secondNumber;
+        String repeatOperation;
         Scanner scanner = new Scanner(System.in);
 
 
@@ -59,7 +55,7 @@ public class SimpleCalculator {
                         System.out.println(operations.subtraction(firstNumber, secondNumber));
                         break;
                     case "mul":
-                        System.out.println(operations.multiplication(firstNumber, secondNumber));
+                        System.out.println(operations.multiplication(firstNumber,  secondNumber));
                         break;
                     case "div": // figured out new problem in catch printing
                         try {
@@ -77,7 +73,7 @@ public class SimpleCalculator {
                 repeatOperation = scanner.next();
             }while(repeatOperation.equalsIgnoreCase("y"));
 
-        System.err.println("\"Thank you for using me sir\", Have a great day :). \nbye");
+        System.err.println("\"Thank you for using me sir\", Have a great day :) \nbye");
 
     }
 }
