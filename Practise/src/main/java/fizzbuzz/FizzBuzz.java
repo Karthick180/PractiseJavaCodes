@@ -9,14 +9,17 @@ public class FizzBuzz {
        int input = scanner.nextInt();
 
 
-       if(input%5==0 && input%3==0)
-            System.out.println("FIZZBUZZ");
-       else if(input%5==0)
-           System.out.println("FIZZ");
-       else if (input%3==0)
-           System.out.println("BUZZ");
-       else
-           System.out.println(input);
+//       if(input%5==0 && input%3==0)
+//            System.out.println("FIZZBUZZ");
+//       else if(input%5==0)
+//           System.out.println("FIZZ");
+//       else if (input%3==0)
+//           System.out.println("BUZZ");
+//       else
+//           System.out.println(input);
+
+
+        System.out.println((input%5==0 && input%3==0)?"FIZZBUZZ":(input%5==0)?"FIZZ":(input%3==0)?"BUZZ":input);
 
        scanner.close();
 
